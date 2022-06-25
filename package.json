@@ -1,0 +1,72 @@
+{
+  "name": "eff-lang",
+  "publisher": "jsprinz",
+  "displayName": "Eff-lang",
+  "description": "Eff language support for VSCode",
+  "homepage": "https://github.com/neothethird/vscode-eff-lang#readme",
+  "version": "5.1.0",
+  "author": {
+    "email": "neo@neothethird.de",
+    "name": "Johannah Sprinz",
+    "url": "https://spri.nz/"
+  },
+  "license": "GPL-3.0",
+  "icon": "icons/eff_dark.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neothethird/vscode-eff-lang"
+  },
+  "maintainers": [
+    "Johannah Sprinz"
+  ],
+  "scripts": {
+    "lint": "npx prettier \"**/!(*min*)\" --arrow-parens=avoid --trailing-comma=none -uw",
+    "build": "node build.js"
+  },
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "eff",
+        "aliases": [
+          "Eff",
+          "eff",
+          "EFF"
+        ],
+        "extensions": [
+          ".eff"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "dark": "./icons/eff_dark.png",
+          "light": "./icons/eff_light.png"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "eff",
+        "scopeName": "source.eff",
+        "path": "./syntaxes/eff.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "eff",
+        "path": "./snippets.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "apple-plist-parser": "^0.0.3",
+    "fs-extra": "^10.1.0",
+    "node-atomizr": "^0.6.1",
+    "prettier": "^2.7.1",
+    "vsce": "^2.9.2"
+  }
+}

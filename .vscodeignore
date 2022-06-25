@@ -1,0 +1,11 @@
+# ignore everything
+*
+*/**
+**/.DS_Store
+# whitelist
+!*.md
+!LICENSE
+!icons/*.png
+!language-configuration.json
+!snippets.json
+!syntaxes/eff.tmLanguage.json

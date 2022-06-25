@@ -1,0 +1,5 @@
+node_modules
+*.vsix
+snippets.json
+syntaxes
+language-configuration.json

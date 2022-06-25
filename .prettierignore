@@ -1,0 +1,5 @@
+# from .gitignore
+node_modules
+*.vsix
+# prettier-specific
+lib/eff

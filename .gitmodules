@@ -1,0 +1,3 @@
+[submodule "lib/eff"]
+	path = lib/eff
+	url = https://github.com/matijapretnar/eff.git
